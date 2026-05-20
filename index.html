@@ -353,7 +353,7 @@
       <div class="kpi-badge">BOX 3</div>
       <div class="kpi-label">경험자 vs 무경험자 심화 성취 차이</div>
       <div class="kpi-value">1.02점</div>
-      <div class="kpi-desc">경험자(16명) 평균 4.02점 vs 무경험자(8명) 3.00점<br>심화 단계에서만 큰 격차 — 기초·응용은 거의 동등</div>
+      <div class="kpi-desc">경험자(12명) 평균 4.02점 vs 무경험자(12명) 3.00점<br>심화 단계에서만 큰 격차 — 기초·응용은 거의 동등</div>
     </div>
   </div>
 
@@ -436,7 +436,7 @@
         <canvas id="expChart"></canvas>
       </div>
       <div class="insight-box warn" style="margin-top:12px">
-        무경험자 비중 33%(8/24). 차기 차수 25~40% 범위로 모집 기준 문서화 검토 권고.
+        무경험자 비중 50%(12/24). 차기 차수 45~55% 범위로 모집 기준 문서화 검토 권고.
       </div>
     </div>
   </div>
@@ -581,7 +581,7 @@
 <div id="group" class="section">
   <div class="card">
     <div class="card-title">⚖️ 프로그래밍 경험 유무에 따른 성취도 차이 (3개월차 기준)</div>
-    <div class="card-sub">경험자(16명) vs 무경험자(8명) — 어느 영역에서 차이가 발생하는지 확인</div>
+    <div class="card-sub">경험자(12명) vs 무경험자(12명) — 어느 영역에서 차이가 발생하는지 확인</div>
     <div class="chart-wrap" style="height:300px">
       <canvas id="expAchBar"></canvas>
     </div>
@@ -627,7 +627,7 @@
           <div style="background:#f97316;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0">③</div>
           <div>
             <div style="font-size:13px;font-weight:600">입과 모집 시 경험 균형 명문화</div>
-            <div style="font-size:12px;color:#64748b;margin-top:3px">현재 무경험자 33%(8/24). 차기 차수 25~40% 범위로 모집 기준 문서화 검토(가이드라인 수준).</div>
+            <div style="font-size:12px;color:#64748b;margin-top:3px">현재 무경험자 50%(12/24). 차기 차수 45~55% 범위로 모집 기준 문서화 검토(가이드라인 수준).</div>
           </div>
         </div>
       </div>
@@ -875,7 +875,7 @@ new Chart(document.getElementById('expChart'), {
   type: 'doughnut',
   data: {
     labels: ['없음 (무경험)', '6개월 미만', '6개월~2년', '2년 이상'],
-    datasets: [{ data: [8,5,6,5], backgroundColor: ['#ef4444','#f97316','#3b6fd4','#10b981'], borderWidth: 2, borderColor: '#fff' }]
+    datasets: [{ data: [12,4,4,4], backgroundColor: ['#ef4444','#f97316','#3b6fd4','#10b981'], borderWidth: 2, borderColor: '#fff' }]
   },
   options: DONUT_OPT()
 });
@@ -1018,8 +1018,8 @@ new Chart(document.getElementById('expAchBar'), {
   data: {
     labels: achDomains,
     datasets: [
-      { label: '경험자 (N=16)', data: [3.90, 3.90, 4.02, 4.03, 3.81], backgroundColor: 'rgba(59,111,212,0.8)', borderRadius: 5 },
-      { label: '무경험자 (N=8)', data: [3.58, 3.79, 3.00, 3.44, 3.58], backgroundColor: 'rgba(239,68,68,0.75)', borderRadius: 5 },
+      { label: '경험자 (N=12)', data: [3.90, 3.90, 4.02, 4.03, 3.81], backgroundColor: 'rgba(59,111,212,0.8)', borderRadius: 5 },
+      { label: '무경험자 (N=12)', data: [3.58, 3.79, 3.00, 3.44, 3.58], backgroundColor: 'rgba(239,68,68,0.75)', borderRadius: 5 },
     ]
   },
   options: {
